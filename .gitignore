@@ -22,6 +22,6 @@ hs_err_pid*
 /bin/
 
 #STS/Eclipse
-.project
-.settings
-.classpath
+#.project
+#.settings
+#.classpath
