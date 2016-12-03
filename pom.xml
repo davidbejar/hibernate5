@@ -21,34 +21,36 @@
 		<version>2.0.0.BUILD-SNAPSHOT</version>
 	</parent>
 
-  <!-- (you don't need this if you are using a .RELEASE version) -->
-  <repositories>
-    <repository>
-      <id>spring-snapshots</id>
-      <url>http://repo.spring.io/snapshot</url>
-      <snapshots><enabled>true</enabled></snapshots>
-    </repository>
-    <repository>
-      <id>spring-milestones</id>
-      <url>http://repo.spring.io/milestone</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>spring-snapshots</id>
-      <url>http://repo.spring.io/snapshot</url>
-    </pluginRepository>
-    <pluginRepository>
-      <id>spring-milestones</id>
-      <url>http://repo.spring.io/milestone</url>
-    </pluginRepository>
-  </pluginRepositories>
+	<!-- (you don't need this if you are using a .RELEASE version) -->
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<url>http://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<url>http://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<url>http://repo.spring.io/snapshot</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<url>http://repo.spring.io/milestone</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
