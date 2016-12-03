@@ -16,29 +16,21 @@
 
 package davidbejar.study.hibernate52.tomcat;
 
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Value;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.http.ResponseEntity;
-import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
-
 /**
  * Basic integration tests for demo application.
  *
  * @author Dave Syer
  */
-@RunWith(SpringJUnit4ClassRunner.class)
+// @RunWith(SpringJUnit4ClassRunner.class)
 // @SpringApplicationConfiguration(classes =
 // NonAutoConfigurationSampleTomcatApplication.class)
-@WebAppConfiguration
+// @WebAppConfiguration
 // @IntegrationTest("server.port=0")
-@DirtiesContext
+// @DirtiesContext
 public class NonAutoConfigurationSampleTomcatApplicationTests {
 
-	@Value("${local.server.port}")
-	private int port;
+	// @Value("${local.server.port}")
+	// private int port;
 
 	// @Configuration
 	// @Import({
