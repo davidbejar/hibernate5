@@ -1,29 +1,37 @@
 /**
  *
  */
-package davidbejar.study.hibernate52.entity;
+package davidbejar.study.hibernate52.pojo;
 
 import java.time.LocalDate;
 
 import javax.persistence.Column;
-
-import org.hibernate.annotations.Table;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @author davidbejar
  *
  */
-@Table(appliesTo = "PURCHASED_ITEMS")
+@Entity
+@Table(name = "hibernate.\"PURCHASED_ITEMS\"")
 public class PurchasedItem {
 
-	@Column
+	@Id
+	@Column(name = "\"ID\"")
 	private String id;
-	@Column
+	@Column(name = "\"KEY\"")
 	private String key;
+	@Column(name = "\"DESCRIPTION\"")
 	private String description;
+	@Column(name = "\"PRICE\"")
 	private Double price;
+	@Column(name = "\"CURRENCY\"")
 	private String currency;
+	@Column(name = "\"PURCHASE_DATE\"")
 	private LocalDate purchaseDate;
+	@Column(name = "\"PAYMENT_METHOD\"")
 	private String paymentMethod;
 
 	/**
